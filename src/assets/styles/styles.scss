@@ -1,0 +1,331 @@
+@import "blog";
+@import "blog_details";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap");
+
+$titletext: #292f36;
+$bodytext: #4d5053;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+
+h2 {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    color: $titletext;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    color: $titletext;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    color: $titletext;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        &-text {
+            font-family: "DM Serif Display", sans-serif;
+            font-size: 40px;
+            margin-left: 5px;
+        }
+    }
+    .menu ul {
+        display: flex;
+        list-style-type: none;
+        font-family: "Jost", sans-serif;
+        gap: 60px;
+        a {
+            font-size: 20px;
+            color: $titletext;
+        }
+    }
+}
+
+.banner {
+    background-image: url(@/assets/img/banner.png);
+    height: 758px;
+    padding: 208px 0 208px 52px;
+    border-radius: 50px;
+    margin-bottom: 96px;
+    &-box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    &-title {
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 65px;
+        color: $titletext;
+    }
+    &-text {
+        color: $bodytext;
+        font-family: "Jost", sans-serif;
+        font-size: 22px;
+    }
+    &-btn {
+        align-self: start;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        padding: 26px 48px;
+        background-color: $titletext;
+        color: #fff;
+        border: none;
+        border-radius: 18px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 93px;
+    margin-bottom: 100px;
+    &-top {
+        text-align: center;
+        width: 60%;
+        h2 {
+            margin-bottom: 8px;
+        }
+        p {
+            color: $bodytext;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 56px;
+        .project:nth-child(1) img {
+            border-radius: 0 70px 0 0;
+        }
+        .project:nth-child(2) img {
+            border-radius: 70px 0 0 0;
+        }
+        .project:nth-child(3) img {
+            border-radius: 0 0 70px 0;
+        }
+        .project:nth-child(4) img {
+            border-radius: 0 0 0 70px;
+        }
+        .project {
+            &-info {
+                margin-top: 24px;
+                display: flex;
+                justify-content: space-between;
+            }
+            &-category {
+                color: $bodytext;
+                font-family: "Jost", sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.counters {
+    width: 100vw;
+    height: 457px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f0ec;
+    gap: 74px;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 96px;
+    .counter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 2px solid #cda274;
+        padding-right: 56px;
+        &-number {
+            font-family: "DM Serif Display", sans-serif;
+            font-size: 85px;
+            color: #cda274;
+        }
+        &-text {
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+            color: $bodytext;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 96px;
+    h2 {
+        align-self: start;
+        margin-bottom: 20px;
+    }
+    &-header {
+        width: 67%;
+        margin-bottom: 50px;
+        &-text {
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+            color: $bodytext;
+        }
+    }
+    &-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    &-post {
+        flex: 1 1 0;
+        width: 31%;
+        padding: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        border: 2px solid #e7e7e7;
+        border-radius: 50px;
+        gap: 10px;
+        position: relative;
+        &-box {
+            display: flex;
+            flex-direction: column;
+            img {
+                margin-bottom: 8px;
+            }
+            .sticker {
+                background-color: #fff;
+                padding: 10px;
+                position: absolute;
+                bottom: 42%;
+                left: 10%;
+                font-family: Jost;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 8px 8px 8px 0px;
+            }
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        &-arrow {
+            align-self: end;
+        }
+
+        img {
+            border-radius: 45px 45px 0 0;
+        }
+        h3 {
+            width: 82%;
+            line-height: 125%;
+        }
+        &-date {
+            font-family: "Jost", sans-serif;
+            font-size: 16px;
+            color: $bodytext;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #f4f0ec;
+            circle {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 101px;
+    margin-bottom: 100px;
+    .left {
+        &-logo {
+            display: flex;
+            margin-bottom: 15px;
+            &-text {
+                font-family: "DM Serif Display", serif;
+                font-size: 40px;
+            }
+        }
+
+        &-img {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+        }
+
+        &-text {
+            color: $bodytext;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+            margin-bottom: 31px;
+        }
+        .socials {
+            display: flex;
+            gap: 54px;
+        }
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-right: 250px;
+        a {
+            color: $bodytext;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        p {
+            color: $bodytext;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+        }
+    }
+}

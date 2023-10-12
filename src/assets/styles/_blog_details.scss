@@ -1,0 +1,98 @@
+.blog-details {
+    display: flex;
+    gap: 52px;
+    margin-bottom: 100px !important;
+    &-current {
+        &-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-family: "Jost", sans-serif;
+            margin: 46px 0;
+            &-crumbles {
+                margin-right: 70px;
+            }
+        }
+        img {
+            border-radius: 50px;
+        }
+        &-description {
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+            color: #4d5053;
+            margin-bottom: 35px;
+        }
+        &-quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f0ec;
+            border-radius: 50px;
+            margin-bottom: 27px;
+            .quotemark {
+                font-size: 200px;
+                margin-bottom: -150px;
+            }
+            p {
+                text-align: center;
+                color: #cda274;
+                font-family: "DM Serif Display", serif;
+                font-size: 25px;
+                font-style: italic;
+                width: 45%;
+                margin-bottom: 45px;
+            }
+        }
+    }
+    &-other {
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            color: #4d5053;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+        }
+        &-articles {
+            margin-top: 24px;
+            margin-bottom: 44px;
+            div {
+                .small-number {
+                    color: #cda274;
+                    font-family: "DM Serif Display", serif;
+                    font-size: 20px;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+            }
+            .article {
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+            }
+        }
+        img {
+            margin-bottom: 35px;
+        }
+    }
+    &-tags {
+        width: 345px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 24px;
+        button {
+            background-color: #f4f0ec;
+            border: none;
+            border-radius: 10px;
+            padding: 9px 30px;
+            &:hover {
+                cursor: pointer;
+                background-color: #292f36;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -4,7 +4,8 @@
         <!-- <mainPageComponent /> -->
         <!-- <blogComponent /> -->
         <!-- <blogDetailsComponent /> -->
-        <projectPageComponent />
+        <!-- <projectPageComponent /> -->
+        <projectDetailsComponent />
         <footerComponent />
     </div>
 </template>
@@ -15,7 +16,8 @@ import footerComponent from "./footerComponent.vue";
 // import mainPageComponent from "./mainPageComponent.vue";
 // import blogComponent from "./blogComponent.vue";
 // import blogDetailsComponent from "./blogDetailsComponent.vue";
-import projectPageComponent from "./projectPageComponent.vue";
+// import projectPageComponent from "./projectPageComponent.vue";
+import projectDetailsComponent from "./projectDetailsComponent.vue";
 
 export default {
     name: "mainWrapper",
@@ -25,7 +27,8 @@ export default {
         // mainPageComponent,
         // blogComponent,
         // blogDetailsComponent,
-        projectPageComponent,
+        // projectPageComponent,
+        projectDetailsComponent,
     },
     props: {},
     data() {

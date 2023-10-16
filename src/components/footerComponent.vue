@@ -4,7 +4,7 @@
             <div class="left-logo">
                 <div class="left-img">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="" />
+                        <img src="@/assets/img/logo.png" alt="" />
                     </a>
                 </div>
                 <p class="left-logo-text">Interno</p>

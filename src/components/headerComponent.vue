@@ -1,18 +1,18 @@
 <template>
     <div class="header container">
-        <a href="index.html">
+        <router-link :to="'home'">
             <div class="logo">
                 <div class="logo-img">
                     <img src="@/assets/img/logo.png" alt="" />
                 </div>
                 <p class="logo-text">Interno</p>
             </div>
-        </a>
+        </router-link>
         <nav class="menu">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="./blog.html">Blog</a></li>
+                <li><router-link :to="'home'">Home</router-link></li>
+                <li><router-link :to="'project-page'">Project</router-link></li>
+                <li><router-link :to="'blog'">Blog</router-link></li>
             </ul>
         </nav>
     </div>

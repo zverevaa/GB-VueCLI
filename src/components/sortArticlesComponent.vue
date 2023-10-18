@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="article" v-for="article in articles" :key="article">
+        <div class="article" v-for="article in articles" :key="article.id">
             <p class="small-number">{{ getNumber(article) }}</p>
             <p class="text">{{ article.text }}{{ article.tags }}</p>
         </div>

@@ -3,7 +3,7 @@
         <div class="left">
             <div class="left-logo">
                 <div class="left-img">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="@/assets/img/logo.png" alt="" />
                     </a>
                 </div>
@@ -46,9 +46,9 @@
         </div>
         <div class="middle">
             <h3>Pages</h3>
-            <a href="#">Home</a>
-            <a href="#">Project</a>
-            <a href="#">Blog</a>
+            <router-link :to="'home'">Home</router-link>
+            <router-link :to="'project-page'">Project</router-link>
+            <router-link :to="'blog'">Blog</router-link>
         </div>
         <div class="right">
             <h3>Contact</h3>

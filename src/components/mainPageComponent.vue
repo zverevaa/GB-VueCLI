@@ -7,7 +7,7 @@
                     There are many varioations of the passages of lorem Ipsum
                     fromavailable, majority.
                 </p>
-                <a href="#"
+                <router-link :to="'project-details'">
                     ><button class="banner-btn">
                         Get Started
                         <span
@@ -27,7 +27,7 @@
                                 />
                             </svg>
                         </span></button
-                ></a>
+                ></router-link>
             </div>
         </section>
         <projectsComponent />

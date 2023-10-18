@@ -7,8 +7,8 @@
                 <p class="project-category">{{ project.category }}</p>
             </div>
             <div class="project-arrow">
-                <a href="#"
-                    ><svg
+                <router-link :to="'project-details'">
+                    <svg
                         width="70"
                         height="70"
                         viewBox="0 0 70 70"
@@ -24,7 +24,7 @@
                             stroke-linejoin="round"
                         />
                     </svg>
-                </a>
+                </router-link>
             </div>
         </div>
     </div>

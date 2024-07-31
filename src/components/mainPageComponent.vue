@@ -8,7 +8,7 @@
                     fromavailable, majority.
                 </p>
                 <router-link :to="'project-details'">
-                    ><button class="banner-btn">
+                    <button class="banner-btn">
                         Get Started
                         <span
                             ><svg
